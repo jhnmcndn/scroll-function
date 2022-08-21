@@ -1,4 +1,33 @@
-button {
-  width: 100px;
-  height: 50px;
+header {
+  width: 1100px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  li {
+    border: 5px solid #000;
+    padding: 5px 20px;
+    cursor: pointer;
+    &:hover {
+      border-color: green;
+    }
+  }
+  .selectedList {
+    border-color: green;
+  }
+}
+
+.scrollContainer {
+  height: 400px;
+  border: 1px solid red;
+  overflow-y: scroll;
+  .foodBox {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+  }
 }
